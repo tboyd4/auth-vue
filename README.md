@@ -1,35 +1,13 @@
-# authentication_course
+# Description
+    - App to showcase Token-Based Authentication
 
-## Project setup
+## Technology Used
+    - Vue, Vuex, Vuetify
+    - JWT, Node/Express
 
-```
-npm install
-```
+## Functionality
+    - This application will show a list of events if the user is registered and logged in. 
 
-### Compiles and hot-reloads for development & starts backend server
-
-```
-npm run start
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Run your tests
-
-```
-npm run test
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Disclaimers
+    - This application is currently not built for production. the backend server is extremely loose, and is not safe for actual passwords
+    - This application is meant to showcase the Front End of Token-Based Authentication using Vue. 
