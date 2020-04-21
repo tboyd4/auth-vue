@@ -58,7 +58,7 @@ app.post('/register', (req, res) => {
       })
     }
   } else {
-    res.sendStatus(400)
+    res.sendStatus(400).json({errors: errorsToSend})
   }
 })
 
@@ -78,7 +78,7 @@ app.post('/login', (req, res) => {
       name: userInfo.name
     })
   } else {
-    res.sendStatus(400)
+    res.sendStatus(401).json({error: 'Invalid login. Please try again'})
   }
 })
 

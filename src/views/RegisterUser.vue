@@ -19,6 +19,9 @@
           <button type="submit" name="button">
             Register
           </button>
+
+          <p>{{errors}}</p>
+
           <router-link to="/login">
             Already Have an Account? Login!
           </router-link>
@@ -32,7 +35,8 @@
             return {
                 name: '',
                 email: '',
-                password: ''
+                password: '',
+                errors: null
             }
         },
         methods: {
@@ -44,6 +48,9 @@
                 })
                 .then(() => {
                     this.$router.push({name: 'dashboard'})
+                })
+                .catch(err => {
+                  this.errorr = err.response.data
                 })
             }
         }
